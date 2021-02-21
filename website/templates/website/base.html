@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Harish Electronic Private Limited
+    </div></title>
+    <link rel="stylesheet" href="{% static 'css/website.css' %}">
+    <link rel = "icon" href ="{% static 'img/title.jng' %}" type = "image/x-icon"> 
+              
+</head>
+
+<body>
+    <div class="container">
+    <div class="banner">
+        harish Electronic Private Limited.
+    </div>
+    <div class="menu">
+        <div class="menuitem"><a href="/home">Home</a></div> 
+        <div class="menuitem"><a href="/products">Products</a></div> 
+        <div class="menuitem"><a href="/people">People</a></div>
+        <div class="menuitem"><a href="/contact">Contact Us</a></div> 
+    </div><div class="content">
+    {% block content %}    
+    {% endblock  %}
+    </div>
+    <div class="footer">
+        Copyright © 2020 Harishs Electronic Private Limited, Developed by Harisf G.
+    </div>
+    </div>
+</body>
+
+</html>

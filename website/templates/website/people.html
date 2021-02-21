@@ -1,0 +1,14 @@
+{% extends "website/base.html" %}
+
+{% block content %}
+    <h1 id="Ex">Executives</h1>
+    {% for people in peoples %}
+        <div class="productitem"> 
+            <div class="itemimage">
+            <img src="{{ people.photo.url }}" alt="executive image" width="250" height="200">
+            </div>
+            <div class="Itemname">Name:{{ people.Membername }}</div>
+            <div class="Product price">Designation:{{ people.Designation }}</div>
+        </div>
+    {% endfor %}
+{% endblock  %}
